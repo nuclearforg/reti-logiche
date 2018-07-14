@@ -1,6 +1,6 @@
 # Digital Systems Design project [051228]
 
-This project is going to be done as part of the class [051228-Prova finale (progetto di reti logiche)][1]
+This project was done as part of the course [051228-Prova finale (progetto di reti logiche)][1] held in the fall semester at Politecnico di Milano.
 
 The project guidelines are available [here][2]
 
