@@ -1,0 +1,48 @@
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /BLIND_PATH/PROGETTO_RETI_LOGICHE/XilinxVerifica/Vivado/2017.1/bin/unwrapped/lnx64.o/xelab -sv --relax --mt 8 -L xil_defaultlib glbl -L unimacro_ver -L secureip -L unisims_ver --snapshot target_postsynth project_tb -log elaborate_postsynth.log --debug all --timescale 1ns/100ps 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module work.glbl
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.FDPE_default
+Compiling module work.address_counter
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDPE(INIT=1'b0)
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module work.bounding_box
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.LUT5
+Compiling module work.multiplier
+Compiling module work.box_area
+Compiling module work.control_unit
+Compiling module work.header
+Compiling module unisims_ver.GND
+Compiling module work.memory
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE(IS_G_INVERTED=1'b1)
+Compiling module work.matrix_idx
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.OBUF
+Compiling module work.project_reti_logiche
+Compiling architecture projecttb of entity work.project_tb
+Built simulation snapshot target_postsynth

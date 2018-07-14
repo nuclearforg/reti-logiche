@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# xsim v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jun  4 19:52:11 2018
+# Process ID: 1567
+# Current directory: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim
+# Command line: xsim -log xsim_postsynth.log -mode tcl -source {xsim.dir/target_postsynth/xsim_script.tcl}
+# Log file: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/xsim_postsynth.log
+# Journal file: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/target_postsynth/xsim_script.tcl
+# xsim {target_postsynth} -autoloadwcfg -tclbatch {./run_sim.tcl}
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+source ./run_sim.tcl
+## run all
+Failure: Simulation Ended!, test passed
+Time: 2857500 ps  Iteration: 1  Process: /project_tb/test  File: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/tb/testbench.vhd
+$finish called at time : 2857500 ps
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Jun  4 19:52:24 2018...

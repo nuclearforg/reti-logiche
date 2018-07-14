@@ -1,0 +1,13 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [VRFC 10-307] analyzing entity box_area
+INFO: [VRFC 10-307] analyzing entity matrix_idx
+INFO: [VRFC 10-307] analyzing entity address_counter
+INFO: [VRFC 10-307] analyzing entity header
+INFO: [VRFC 10-307] analyzing entity bounding_box
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-307] analyzing entity control_unit
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/tb/testbench.vhd" into library work
+INFO: [VRFC 10-307] analyzing entity project_tb

@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/project_reti_logiche_synth.v" into library work
+INFO: [VRFC 10-311] analyzing module address_counter
+INFO: [VRFC 10-311] analyzing module bounding_box
+INFO: [VRFC 10-311] analyzing module box_area
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module header
+INFO: [VRFC 10-311] analyzing module matrix_idx
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module project_reti_logiche
+INFO: [VRFC 10-311] analyzing module glbl

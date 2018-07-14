@@ -1,0 +1,396 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jun  4 19:50:55 2018
+# Process ID: 1024
+# Current directory: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim
+# Command line: vivado -mode batch -source target_synth.prj -log synth.log
+# Log file: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/synth.log
+# Journal file: /BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/vivado.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/BLIND_PATH/.Xilinx/Vivado/2017.1/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source target_synth.prj
+# read_vhdl  ../src/10496325/10496325.vhd
+# create_fileset -constrset userConstraints
+# add_files -fileset userConstraints constr.xdc
+# synth_design -top project_reti_logiche -part xc7a200tfbg484-1 -constrset userConstraints -flatten_hierarchy none
+Command: synth_design -top project_reti_logiche -part xc7a200tfbg484-1 -constrset userConstraints -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t-fbg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1036 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1176.270 ; gain = 75.988 ; free physical = 28606 ; free virtual = 77050
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:162]
+INFO: [Synth 8-3491] module 'box_area' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:276' bound to instance 'COMPUTE_AREA' of component 'box_area' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'box_area' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:287]
+INFO: [Synth 8-3491] module 'multiplier' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:728' bound to instance 'MULT1' of component 'multiplier' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:737]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (1#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:737]
+INFO: [Synth 8-256] done synthesizing module 'box_area' (2#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:287]
+INFO: [Synth 8-3491] module 'matrix_idx' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:341' bound to instance 'SCAN_LOGIC' of component 'matrix_idx' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'matrix_idx' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:352]
+WARNING: [Synth 8-614] signal 'i_width' is read in the process but is not in the sensitivity list [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:356]
+WARNING: [Synth 8-614] signal 'i_height' is read in the process but is not in the sensitivity list [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:356]
+INFO: [Synth 8-256] done synthesizing module 'matrix_idx' (3#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:352]
+INFO: [Synth 8-3491] module 'address_counter' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:388' bound to instance 'ADDR_COUNTER' of component 'address_counter' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'address_counter' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:395]
+INFO: [Synth 8-256] done synthesizing module 'address_counter' (4#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:395]
+INFO: [Synth 8-3491] module 'bounding_box' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:471' bound to instance 'BOUNDINGS' of component 'bounding_box' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'bounding_box' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:485]
+WARNING: [Synth 8-614] signal 'is_on' is read in the process but is not in the sensitivity list [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:501]
+WARNING: [Synth 8-614] signal 'i_enable' is read in the process but is not in the sensitivity list [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:501]
+INFO: [Synth 8-256] done synthesizing module 'bounding_box' (5#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:485]
+INFO: [Synth 8-3491] module 'header' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:423' bound to instance 'HEADER_STORAGE' of component 'header' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'header' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:434]
+INFO: [Synth 8-256] done synthesizing module 'header' (6#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:434]
+INFO: [Synth 8-3491] module 'memory' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:532' bound to instance 'MEMORY_IF' of component 'memory' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'memory' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:545]
+INFO: [Synth 8-256] done synthesizing module 'memory' (7#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:545]
+INFO: [Synth 8-3491] module 'control_unit' declared at '/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:575' bound to instance 'FSM' of component 'control_unit' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:591]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (8#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:591]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (9#1) [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:162]
+WARNING: [Synth 8-3331] design memory has unconnected port i_clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.770 ; gain = 116.488 ; free physical = 28614 ; free virtual = 77059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.770 ; gain = 116.488 ; free physical = 28614 ; free virtual = 77059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+Finished Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1606.816 ; gain = 0.000 ; free physical = 28330 ; free virtual = 76774
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28420 ; free virtual = 76865
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28420 ; free virtual = 76865
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28420 ; free virtual = 76865
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "o_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:359]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:360]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:403]
+INFO: [Synth 8-5544] ROM "o_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "o_we" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control_unit'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:598]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'y_last_reg' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:362]
+WARNING: [Synth 8-327] inferring latch for variable 'x_last_reg' [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:361]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:598]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:598]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                      00000000001 |                             0000
+                 s_fetch |                      00000000010 |                             0001
+                 s_width |                      00000000100 |                             0010
+                s_height |                      00000001000 |                             0011
+                 s_thres |                      00000010000 |                             0100
+                 s_image |                      00000100000 |                             0101
+                   s_dim |                      00001000000 |                             0110
+                  s_area |                      00010000000 |                             0111
+                 s_areal |                      00100000000 |                             1000
+                 s_areah |                      01000000000 |                             1001
+                  s_done |                      10000000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control_unit'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:598]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28412 ; free virtual = 76857
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module box_area 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module matrix_idx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module bounding_box 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
+Module header 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 3     
+Module memory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module control_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:359]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:360]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/src/10496325/10496325.vhd:403]
+WARNING: [Synth 8-3331] design memory has unconnected port i_clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28400 ; free virtual = 76845
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28276 ; free virtual = 76720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28273 ; free virtual = 76718
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28274 ; free virtual = 76719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28274 ; free virtual = 76719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28274 ; free virtual = 76719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28274 ; free virtual = 76719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    15|
+|3     |LUT1   |    23|
+|4     |LUT2   |    45|
+|5     |LUT3   |    42|
+|6     |LUT4   |    62|
+|7     |LUT5   |    11|
+|8     |LUT6   |    28|
+|9     |FDCE   |    70|
+|10    |FDPE   |    10|
+|11    |FDRE   |    67|
+|12    |LD     |    16|
+|13    |IBUF   |    11|
+|14    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |   428|
+|2     |  COMPUTE_AREA   |box_area        |   113|
+|3     |    MULT1        |multiplier      |    47|
+|4     |  SCAN_LOGIC     |matrix_idx      |    80|
+|5     |  ADDR_COUNTER   |address_counter |    36|
+|6     |  BOUNDINGS      |bounding_box    |    75|
+|7     |  HEADER_STORAGE |header          |    30|
+|8     |  MEMORY_IF      |memory          |    25|
+|9     |  FSM            |control_unit    |    30|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28274 ; free virtual = 76719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.816 ; gain = 116.488 ; free physical = 28329 ; free virtual = 76774
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1606.816 ; gain = 506.535 ; free physical = 28329 ; free virtual = 76774
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+Finished Parsing XDC File [/BLIND_PATH/PROGETTO_RETI_LOGICHE/VERIFICATION/scripts_with_post_synth_sim/constr.xdc]
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE (inverted pins: G): 16 instances
+
+42 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1606.816 ; gain = 519.129 ; free physical = 28290 ; free virtual = 76735
+# write_verilog -force ./project_reti_logiche_synth.v -mode funcsim -write_all_overrides
+# exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  4 19:51:52 2018...
